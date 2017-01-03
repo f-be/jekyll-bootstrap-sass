@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: VWFS DU UI Kit on Jekyll Bootstrap Sass boilerplate
+email: florian.bemm@capgemini.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -27,4 +27,14 @@ permalink: "posts/:title"
 categories: [navbar]
 
 sass:
+    # loading path from site root
+    # default to _sass
+    sass_dir: _sass
+    # style : nested (default), compact, compressed, expanded
+    #         :nested, :compact, :compressed, :expanded also works
+    # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+    # on a typical twitter bootstrap stats are :
+    # nested 138,7kB, compact 129,1kB, expanded 135,9 kB, compressed 122,4 kB
     style: :compressed
+
+include: ['_pages']
